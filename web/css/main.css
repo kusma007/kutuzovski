@@ -237,8 +237,8 @@ body {
 }
 
 .advantages-block {
-    padding: 80px 0;
-    font-size: 16px;
+    padding: 59px 0;
+    font-size: 15px;
 }
 
 .advantages-block > div:first-child {
@@ -412,4 +412,9 @@ img.logo-footer {
 
 .footer-copyright {
     margin-top: 35px;
+}
+
+.advantages-block b {
+    font-size: 40px;
+    line-height: 20px;
 }
