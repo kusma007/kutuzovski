@@ -1,5 +1,8 @@
 <?php
 
+use yii\bootstrap\Modal;
+use yii\helpers\Html;
+
 /* @var $this yii\web\View */
 
 $this->title = 'Торговый комплекс Кутузовский';
@@ -39,27 +42,33 @@ $this->title = 'Торговый комплекс Кутузовский';
         <div class="full-page-bg"></div>
         <div class="advantages-block">
             <div class="row">
-                <div class="col-xs-4">
+                <div class="col-xs-4 advantages-box advantages-box-1">
                     <div class="row">
-                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4">
+                            <div class="advantages-box-img"><?php echo Html::img('@web/images/icons/3-korpusa.png') ?></div>
+                        </div>
                         <div class="col-xs-8">
                             <div><b>3</b></div>
                             <div>корпуса</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-4 advantages-box advantages-box-2">
                     <div class="row">
-                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4">
+                            <div class="advantages-box-img"><?php echo Html::img('@web/images/icons/m.png') ?></div>
+                        </div>
                         <div class="col-xs-8">
                             <div><b>1300 м<sup>2</sup></b></div>
                             <div>площадь центра</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-4 advantages-box advantages-box-3">
                     <div class="row">
-                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4">
+                            <div class="advantages-box-img"><?php echo Html::img('@web/images/icons/lock.png') ?></div>
+                        </div>
                         <div class="col-xs-8">
                             <div><b>24 часа</b></div>
                             <div>ваш офис под нашей охраной</div>
@@ -68,27 +77,33 @@ $this->title = 'Торговый комплекс Кутузовский';
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-4">
+                <div class="col-xs-4 advantages-box advantages-box-4">
                     <div class="row">
-                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4">
+                            <div class="advantages-box-img"><?php echo Html::img('@web/images/icons/office.png') ?></div>
+                        </div>
                         <div class="col-xs-8">
                             <div><b>300</b></div>
                             <div>уютных офисов</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-4 advantages-box advantages-box-5">
                     <div class="row">
-                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4">
+                            <div class="advantages-box-img"><?php echo Html::img('@web/images/icons/parking.png') ?></div>
+                        </div>
                         <div class="col-xs-8">
                             <div><b>500</b></div>
                             <div>парковочных мест</div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-4 advantages-box advantages-box-6">
                     <div class="row">
-                        <div class="col-xs-4"></div>
+                        <div class="col-xs-4">
+                            <div class="advantages-box-img"><?php echo Html::img('@web/images/icons/center.png') ?></div>
+                        </div>
                         <div class="col-xs-8">
                             <div><b>15 минут</b></div>
                             <div>до центра города</div>
@@ -104,7 +119,21 @@ $this->title = 'Торговый комплекс Кутузовский';
         <div class="arenda-block">
             <h3><b>Станьте арендатором прямо сейчас</b></h3>
             <p>Вы можете просмотреть свободные офисы в специальном разделе на нашем сайте</p>
-            <button class="btn"><i class="fa fa-check"></i> Выбрать офис</button>
+<!--            <button class="btn"><i class="fa fa-check"></i> Выбрать офис</button>-->
+            <?php
+            Modal::begin([
+                'header' => '<h2>Схемы помещений готового здания.</h2>',
+                'toggleButton' => ['label' => '<button class="btn"><i class="fa fa-check"></i> Выбрать офис</button>', 'tag' => 'div'],
+            ]);
+
+            echo Html::img('@web/images/здание_1_1этаж.png', ['class' => 'img-responsive']);
+            echo Html::img('@web/images/здание_1_2этаж.png', ['class' => 'img-responsive']);
+            ?>
+
+            <?php
+
+            Modal::end();
+                ?>
         </div>
     </div>
     <div id="location">

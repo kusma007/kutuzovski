@@ -30,7 +30,8 @@ rmrevin\yii\fontawesome\AssetBundle::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'Кутузовский',
+//        'brandLabel' => 'Кутузовский',
+        'brandLabel' => Html::img('@web/images/logo.png', ['class' => 'logo', 'alt' => 'ТК Кутузовский']),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-fixed-top navbar-header-top',
@@ -38,7 +39,7 @@ rmrevin\yii\fontawesome\AssetBundle::register($this);
     ]);
     ?>
     <div class="header-phone pull-right text-center">
-        <div class="header-phone-link-block"><a class="header-phone-link" href="tel:84012999999"><span>8 4012</span> 999 999</a></div>
+        <div class="header-phone-link-block"><a class="header-phone-link" href="tel:84012999999"><span>4012</span> 999 999</a></div>
         <button class="btn btn-xs"><i class="fa fa-phone"></i> Заказать звонок</button>
     </div>
     <?php
@@ -65,29 +66,31 @@ rmrevin\yii\fontawesome\AssetBundle::register($this);
 
 <footer class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-3 logo-footer-block"><span style="color: #ffffff; font-size: 20px;"><b>КУТУЗОВСКИЙ</b></span></div>
-            <div class="col-xs-2 link-footer-block">
-                <div><a href="#about" class="footer-link">О комплексе</a></div>
-                <div><a href="#advantages" class="footer-link">Преимущества</a></div>
-                <div><a href="#arenda" class="footer-link">Арендаторам</a></div>
-            </div>
-            <div class="col-xs-2 link-footer-block">
-                <div><a href="#" class="footer-link">Галерея</a></div>
-                <div><a href="#location" class="footer-link">Расположение</a></div>
-            </div>
-            <div class="col-xs-2 link-footer-block text-right">
-                <div><a href="tel:84012999999" class="footer-link">8 4012 999 999</a></div>
-                <div class="footer-link-descr">каждый день с 9.00 до 18.00</div>
-            <div><a href="mailto:info@mail.com" class="footer-link">info@mail.com</a></div>
-                <div class="footer-link-descr">пишите в любое время</div>
-            </div>
-            <div class="col-xs-3 footer-social text-right">
-                <ul class="list-inline social-buttons">
-                    <li><a href="#"><i class="fa fa-vk"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                </ul>
+        <div class="footer-block">
+            <div class="row">
+                <div class="col-xs-3 logo-footer-block"><?php echo Html::img('@web/images/logo-footer.png', ['class' => 'logo-footer', 'alt' => 'ТК Кутузовский']) ?></div>
+                <div class="col-xs-2 link-footer-block">
+                    <div><a href="#about" class="footer-link">О комплексе</a></div>
+                    <div><a href="#advantages" class="footer-link">Преимущества</a></div>
+                    <div><a href="#arenda" class="footer-link">Арендаторам</a></div>
+                </div>
+                <div class="col-xs-2 link-footer-block">
+                    <div><a href="#" class="footer-link">Галерея</a></div>
+                    <div><a href="#location" class="footer-link">Расположение</a></div>
+                </div>
+                <div class="col-xs-2 link-footer-block text-right">
+                    <div><a href="tel:84012999999" class="footer-link">8 4012 999 999</a></div>
+                    <div class="footer-link-descr">каждый день с 9.00 до 18.00</div>
+                <div><a href="mailto:info@mail.com" class="footer-link">info@mail.com</a></div>
+                    <div class="footer-link-descr">пишите в любое время</div>
+                </div>
+                <div class="col-xs-3 footer-social text-right">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <hr style="border-color: #383838">

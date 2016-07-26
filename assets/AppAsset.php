@@ -20,6 +20,7 @@ class AppAsset extends AssetBundle
     public $css = [
         'css/site.css',
         'css/main.css',
+        'https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic',
     ];
     public $js = [
     ];
