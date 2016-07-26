@@ -26,7 +26,7 @@ rmrevin\yii\fontawesome\AssetBundle::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-
+<a href="#top" id="scroller"><!--<i class="glyphicon glyphicon-chevron-up"></i>--><i class="fa fa-angle-up"></i></a>
 <div class="wrap">
     <?php
     NavBar::begin([
@@ -39,18 +39,18 @@ rmrevin\yii\fontawesome\AssetBundle::register($this);
     ]);
     ?>
     <div class="header-phone pull-right text-center">
-        <div class="header-phone-link-block"><a class="header-phone-link" href="tel:84012999999"><span>4012</span> 999 999</a></div>
+        <div class="header-phone-link-block"><a class="header-phone-link" href="tel:84012391008"><span>4012</span> 391008</a></div>
         <button class="btn btn-xs"><i class="fa fa-phone"></i> Заказать звонок</button>
     </div>
     <?php
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => ['class' => 'navbar-nav navbar-right', 'id' => 'navbar-top'],
         'items' => [
-            ['label' => 'О комплексе', 'url' => ['/#about']],
-            ['label' => 'Преимущества', 'url' => ['/#advantages']],
-            ['label' => 'Арендаторам', 'url' => ['/#arenda']],
-            ['label' => 'Галерея', 'url' => ['/#']],
-            ['label' => 'Расположение', 'url' => ['/#location']],
+            ['label' => 'О комплексе', 'url' => '#about'],
+            ['label' => 'Преимущества', 'url' => '#advantages'],
+            ['label' => 'Арендаторам', 'url' => '#arenda'],
+            ['label' => 'Галерея', 'url' => '#!'],
+            ['label' => 'Расположение', 'url' => '#location'],
         ],
     ]);
     NavBar::end();
@@ -78,13 +78,13 @@ rmrevin\yii\fontawesome\AssetBundle::register($this);
                     <div><a href="#" class="footer-link">Галерея</a></div>
                     <div><a href="#location" class="footer-link">Расположение</a></div>
                 </div>
-                <div class="col-xs-2 link-footer-block text-right">
-                    <div><a href="tel:84012999999" class="footer-link">8 4012 999 999</a></div>
+                <div class="col-xs-2 col-xs-offset-1 link-footer-block text-right">
+                    <div><a href="tel:84012391008" class="footer-link-info">8 4012 391 008</a></div>
                     <div class="footer-link-descr">каждый день с 9.00 до 18.00</div>
-                <div><a href="mailto:info@mail.com" class="footer-link">info@mail.com</a></div>
+                <div><a href="mailto:79211031301@yandex.ru" class="footer-link-info">79211031301@yandex.ru</a></div>
                     <div class="footer-link-descr">пишите в любое время</div>
                 </div>
-                <div class="col-xs-3 footer-social text-right">
+                <div class="col-xs-2 footer-social text-right">
                     <ul class="list-inline social-buttons">
                         <li><a href="#"><i class="fa fa-vk"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>

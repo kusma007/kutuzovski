@@ -115,7 +115,8 @@ body {
 .main-picture-block .full-page-bg {
     background-attachment: scroll;
     background-image: url(../images/main-picture.png);
-    background-position: center center;
+    /*background-position: center center;*/
+    background-position: center 35%;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -123,6 +124,27 @@ body {
     -o-background-size: cover;
     /*background-size: 100% 100%;*/
     height: 527px;
+}
+
+#scroller {
+    position: fixed;
+    bottom: 42px;
+    cursor: pointer;
+    display: none;
+    right: 40px;
+    z-index: 1000;
+}
+
+#scroller i {
+    padding: 12px 16px 13px;
+    font-size: 20px;
+    /* border: 2px solid; */
+    border-radius: 50%;
+    font-weight: bold;
+    /* color: #696969; */
+    color: #767679;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
 }
 
 #location {
@@ -159,6 +181,8 @@ body {
     /*right: 0;*/
     background: #4a4945;
     height: 240px;
+    background: url("../images/bg-arenda.png");
+    background-size: 100% 100%;
 }
 
 /*.arenda-bg {*/
@@ -173,18 +197,27 @@ body {
 #arenda .btn {
     background: #12529a;
     border-radius: 20px;
-    transition: all 0.4s;
+    transition: all 0.3s ease;
+    margin-top: 25px;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#arenda .btn .fa {
+    margin-right: 20px;
 }
 
 
 #arenda .btn:hover {
-    background: #1777CD;
+    /*background: #1777CD;*/
+    background: #F1C30A;
     color: #ffffff;
 }
 
 
 .arenda-block {
-    padding: 60px 0;
+    padding: 35px 0 50px;
 }
 
 .wrap > .container {
@@ -224,16 +257,18 @@ body {
     margin-bottom: 0;
     border: 0;
     background: #ffffff;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-header-top .navbar-nav li a {
     /*padding: 25px 20px;*/
-    margin: 25px 20px;
+    margin: 35px 20px;
     padding: 0;
 }
 
 .navbar-header-top .navbar-brand {
-    padding: 10px 20px;
+    padding: 20px 0;
     /*color: #074b96;*/
     /*font-size: 20px;*/
 }
@@ -258,7 +293,7 @@ body {
     font-size: 15px;
 }
 
-.navbar-header-top .navbar-nav li a:hover {
+.navbar-header-top .navbar-nav li a:hover, .navbar-header-top .navbar-nav li a:focus {
     color: #074b96;
     /*border-color: rgba(7, 75, 150, 0.15);*/
     background: none;
@@ -288,11 +323,11 @@ body {
 }
 
 .header-phone-link-block {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 .header-phone {
-    margin: 10px 0 10px 20px;
+    margin: 20px 0 20px 20px;
 }
 
 .header-phone .btn {
@@ -322,17 +357,29 @@ body {
     font-size: 10px;
 }
 
-.footer-link {
+.footer-link, .footer-link-info {
     font-weight: bold;
+    margin-bottom: 5px;
+}
+
+footer a:hover, .footer a:focus{
+    color: #F2C310;
+    text-decoration: none;
 }
 
 .footer-link-descr {
     font-size: 12px;
+    margin-bottom: 5px;
+    margin-top: -2px;
+}
+
+.footer-social.text-right {
+    font-size: 25px;
 }
 
 .social-buttons li a:hover {
-
-    color: #1777CD;
+    /*color: #1777CD;*/
+    color: #F2C310;
 }
 
 .arenda-block .modal {
