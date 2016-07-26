@@ -36,10 +36,16 @@ rmrevin\yii\fontawesome\AssetBundle::register($this);
             'class' => 'navbar-fixed-top navbar-header-top',
         ],
     ]);
+    ?>
+    <div class="header-phone pull-right text-center">
+        <div class="header-phone-link-block"><a class="header-phone-link" href="tel:84012999999"><span>8 4012</span> 999 999</a></div>
+        <button class="btn btn-xs"><i class="fa fa-phone"></i> Заказать звонок</button>
+    </div>
+    <?php
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'О комплексе', 'url' => ['/#komplex']],
+            ['label' => 'О комплексе', 'url' => ['/#about']],
             ['label' => 'Преимущества', 'url' => ['/#advantages']],
             ['label' => 'Арендаторам', 'url' => ['/#arenda']],
             ['label' => 'Галерея', 'url' => ['/#']],
@@ -62,7 +68,7 @@ rmrevin\yii\fontawesome\AssetBundle::register($this);
         <div class="row">
             <div class="col-xs-3 logo-footer-block"><span style="color: #ffffff; font-size: 20px;"><b>КУТУЗОВСКИЙ</b></span></div>
             <div class="col-xs-2 link-footer-block">
-                <div><a href="#komplex" class="footer-link">О комплексе</a></div>
+                <div><a href="#about" class="footer-link">О комплексе</a></div>
                 <div><a href="#advantages" class="footer-link">Преимущества</a></div>
                 <div><a href="#arenda" class="footer-link">Арендаторам</a></div>
             </div>

@@ -87,6 +87,7 @@ body {
 
 .wrap > .container {
     padding-bottom: 0;
+    padding-top: 71px;
 }
 
 #advantages {
@@ -124,16 +125,191 @@ body {
 }
 
 .navbar-header-top .navbar-nav li a {
-    padding: 25px 20px;
+    /*padding: 25px 20px;*/
+    margin: 25px 20px;
+    padding: 0;
 }
 
 .navbar-header-top .navbar-brand {
     padding: 25px 20px;
-    color: #11549b;
+    color: #074b96;
     font-size: 20px;
 }
 
 .navbar-header-top a {
     color: #393939;
     font-weight: bold;
+}
+
+.navbar-header-top .navbar-nav li a {
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+    position: relative;
+}
+
+.navbar-header-top .navbar-nav li {
+    /*display: inline-block;*/
+    /*margin-right: 38px;*/
+    /*vertical-align: top;*/
+    /*height: 36px;*/
+    /*line-height: 38px;*/
+    font-size: 15px;
+}
+
+.navbar-header-top .navbar-nav li a:hover {
+    color: #074b96;
+    border-color: rgba(7, 75, 150, 0.15);
+    background: none;
+}
+
+.navbar-header-top .navbar-nav li a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #074b96;
+    height: 2px;
+    -webkit-transition-property: left,right;
+    transition-property: left,right;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.navbar-header-top .navbar-nav li a:hover:before {
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.header-phone-link-block {
+    margin-bottom: 5px;
+}
+
+.header-phone {
+    margin: 10px 0 10px 20px;
+}
+
+.header-phone .btn {
+    background: transparent;
+    border: 1px solid #d5d5d5;
+    border-radius: 25px;
+    padding: 2px 10px;
+    transition: all .4s;
+}
+
+.header-phone .btn:hover {
+    border-color: #074b96;
+
+}
+
+.header-phone .btn:hover .fa {
+    -webkit-animation-name: wobble-to-top-right-small;
+    animation-name: wobble-to-top-right-small;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.header-phone-link span {
+    font-size: 10px;
+}
+
+@keyframes wobble-to-top-right-small {
+    16.65% {
+        -webkit-transform: translate(3px,-3px);
+        transform: translate(3px,-3px);
+    }
+
+    33.3% {
+        -webkit-transform: translate(-3px,3px);
+        transform: translate(-3px,3px);
+    }
+
+    49.95% {
+        -webkit-transform: translate(3px,-3px);
+        transform: translate(3px,-3px);
+    }
+
+    66.6% {
+        -webkit-transform: translate(-2px,2px);
+        transform: translate(-2px,2px);
+    }
+
+    83.25% {
+        -webkit-transform: translate(1px,-1px);
+        transform: translate(1px,-1px);
+    }
+
+    100% {
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+    /*16.65% {*/
+        /*-webkit-transform: translate(5px,-5px);*/
+        /*transform: translate(5px,-5px);*/
+    /*}*/
+
+    /*33.3% {*/
+        /*-webkit-transform: translate(-4px,4px);*/
+        /*transform: translate(-4px,4px);*/
+    /*}*/
+
+    /*15.00% {*/
+        /*-webkit-transform: translate(3px,-3px);*/
+        /*transform: translate(3px,-3px);*/
+    /*}*/
+
+    /*40.00% {*/
+        /*-webkit-transform: translate(2px,-2px);*/
+        /*transform: translate(2px,-2px);*/
+    /*}*/
+
+    /*70.0% {*/
+        /*-webkit-transform: translate(-1px,1px);*/
+        /*transform: translate(-1px,1px);*/
+    /*}*/
+
+    /*100% {*/
+        /*-webkit-transform: translate(0,0);*/
+        /*transform: translate(0,0);*/
+    /*}*/
+}
+
+@keyframes wobble-to-top-right {
+    16.65% {
+        -webkit-transform: translate(5px,-5px);
+        transform: translate(5px,-5px);
+    }
+
+    33.3% {
+        -webkit-transform: translate(-4px,4px);
+        transform: translate(-4px,4px);
+    }
+
+    49.95% {
+        -webkit-transform: translate(3px,-3px);
+        transform: translate(3px,-3px);
+    }
+
+    66.6% {
+        -webkit-transform: translate(-2px,2px);
+        transform: translate(-2px,2px);
+    }
+
+    83.25% {
+        -webkit-transform: translate(1px,-1px);
+        transform: translate(1px,-1px);
+    }
+
+    100% {
+        -webkit-transform: translate(0,0);
+        transform: translate(0,0);
+    }
 }
