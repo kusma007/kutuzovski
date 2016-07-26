@@ -1,0 +1,15 @@
+RewriteEngine on
+# Change yourdomain.com to be your primary domain.
+
+RewriteCond %{HTTP_HOST} ^(www.)?http://kutuzovskiy39.ru/$
+
+RewriteCond %{REQUEST_URI} !^/basic/web/
+
+# Don't change this line.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ /basic/web/$1
+
+RewriteCond %{HTTP_HOST} ^(www.)?http://kutuzovskiy39.ru/$
+RewriteRule ^(/)?$ basic/web/index.php [L]
