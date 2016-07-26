@@ -19,7 +19,7 @@ rmrevin\yii\fontawesome\AssetBundle::register($this);
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
-    <meta name="viewport" content="width=1024">
+    <meta name="viewport" content="width=1200">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
