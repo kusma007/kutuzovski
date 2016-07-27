@@ -234,7 +234,7 @@ body {
     /*height: 350px;*/
     background: #f7f7f7;
     font-size: 16px;
-    height: 308px;
+    height: 260px;
 }
 
 .advantages-block {
@@ -467,6 +467,7 @@ img.logo-footer {
 
 #about h2 {
     margin-bottom: 40px;
+    font-weight: bold;
 }
 
 .logo {
@@ -480,4 +481,59 @@ img.logo-footer {
     background: url("../images/logo-small.png");
     width: 49px;
     margin-left: 80px;
+}
+
+.gallery-img {
+    background-size: 100%;
+    background-position: center center;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.gallery-block a.lightbox:hover .gallery-img {
+    -moz-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+    /* -webkit-transform: scale(1.1,1.1); */
+    /* transform: scale(1.1,1.1); */
+    filter: contrast(130%);
+    /* -webkit-filter: contrast(130%); */
+    background-size: 110%;
+}
+
+.gallery-img-1 {
+    background-image: url("../images/gallery/img-1.jpg");
+    height: 330px;
+}
+
+.gallery-img-2 {
+    background-image: url("../images/gallery/img-2.jpg");
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.gallery-img-3 {
+    background-image: url("../images/gallery/img-3.jpg");
+    height: 150px;
+}
+
+.gallery-img-4 {
+    background-image: url("../images/gallery/img-4.jpg");
+    height: 150px;
+}
+
+#gallery .gallery-block {
+    padding: 50px 0 65px;
+}
+
+/*#gallery .full-page-bg {*/
+    /*!* height: 350px; *!*/
+    /*background: #f7f7f7;*/
+    /*!*font-size: 16px;*!*/
+    /*height: 633px;*/
+/*}*/
+
+#gallery h2 {
+    font-weight: bold;
+    /*margin-bottom: 50px;*/
+    margin-top: 0;
 }

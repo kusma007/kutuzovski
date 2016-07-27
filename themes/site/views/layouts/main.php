@@ -12,6 +12,7 @@ use app\assets\AppAsset;
 
 AppAsset::register($this);
 rmrevin\yii\fontawesome\AssetBundle::register($this);
+limion\bootstraplightbox\BootstrapMediaLightboxAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -48,7 +49,7 @@ rmrevin\yii\fontawesome\AssetBundle::register($this);
         'items' => [
             ['label' => 'О Комплексе', 'url' => '#about'],
             ['label' => 'Преимущества', 'url' => '#advantages'],
-            ['label' => 'Галерея', 'url' => '#!'],
+            ['label' => 'Галерея', 'url' => '#gallery'],
             ['label' => 'Арендаторам', 'url' => '#arenda'],
             ['label' => 'Расположение', 'url' => '#location'],
         ],
