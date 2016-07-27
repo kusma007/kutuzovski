@@ -25,6 +25,7 @@ class AppAsset extends AssetBundle
     public $js = [
         'js/main.js',
         'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js',
+        'js/cbpAnimatedHeader.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

@@ -31,7 +31,7 @@ rmrevin\yii\fontawesome\AssetBundle::register($this);
     <?php
     NavBar::begin([
 //        'brandLabel' => 'Кутузовский',
-        'brandLabel' => Html::img('@web/images/logo.png', ['class' => 'logo', 'alt' => 'ТК Кутузовский']),
+        'brandLabel' => Html::tag('div', false, ['class' => 'logo']),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-fixed-top navbar-header-top',
@@ -39,17 +39,17 @@ rmrevin\yii\fontawesome\AssetBundle::register($this);
     ]);
     ?>
     <div class="header-phone pull-right text-center">
-        <div class="header-phone-link-block"><a class="header-phone-link" href="tel:84012391008"><span>4012</span> 391008</a></div>
-        <button class="btn btn-xs"><i class="fa fa-phone"></i> Заказать звонок</button>
+        <div class="header-phone-link-block"><i class="fa fa-phone"></i> <a class="header-phone-link" href="tel:84012391008"><span>8 4012</span> 391 008</a></div>
+<!--        <button class="btn btn-xs"><i class="fa fa-phone"></i> Заказать звонок</button>-->
     </div>
     <?php
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right', 'id' => 'navbar-top'],
         'items' => [
-            ['label' => 'О комплексе', 'url' => '#about'],
+            ['label' => 'О Комплексе', 'url' => '#about'],
             ['label' => 'Преимущества', 'url' => '#advantages'],
-            ['label' => 'Арендаторам', 'url' => '#arenda'],
             ['label' => 'Галерея', 'url' => '#!'],
+            ['label' => 'Арендаторам', 'url' => '#arenda'],
             ['label' => 'Расположение', 'url' => '#location'],
         ],
     ]);

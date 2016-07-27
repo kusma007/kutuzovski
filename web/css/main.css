@@ -102,7 +102,7 @@ body {
 }
 
 .main-picture-block {
-    height: 280px;
+    height: 200px;
 }
 
 .full-page-bg {
@@ -123,7 +123,7 @@ body {
     background-size: cover;
     -o-background-size: cover;
     /*background-size: 100% 100%;*/
-    height: 280px;
+    height: 200px;
 }
 
 #scroller {
@@ -167,6 +167,7 @@ body {
 
 .footer a {
     color: #ffffff;
+    transition: color 0.4s ease;
 }
 
 #arenda {
@@ -257,8 +258,16 @@ body {
     margin-bottom: 0;
     border: 0;
     background: #ffffff;
-    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-header-top.head-bg {
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.95);
+    transition: all 0.3s;
+
 }
 
 .navbar-header-top .navbar-nav li a {
@@ -323,11 +332,13 @@ body {
 }
 
 .header-phone-link-block {
-    margin-bottom: 6px;
+    /*margin-bottom: 6px;*/
+    font-size: 14px;
+    color: #12539A;
 }
 
 .header-phone {
-    margin: 20px 0 20px 20px;
+    margin: 31px 0 31px 20px;
 }
 
 .header-phone .btn {
@@ -342,7 +353,7 @@ body {
     border-color: #074b96;
 }
 
-.header-phone .btn:hover .fa {
+.header-phone .header-phone-link-block:hover .fa {
     -webkit-animation-name: wobble-to-top-right-small;
     animation-name: wobble-to-top-right-small;
     -webkit-animation-duration: 1s;
@@ -354,8 +365,43 @@ body {
 }
 
 .header-phone-link span {
-    font-size: 10px;
+    font-size: 14px;
 }
+
+.navbar-header-top .header-phone-link {
+    color: #12539A;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.navbar-header-top .header-phone-link:hover {
+    text-decoration: none;
+}
+
+.head-bg ul#navbar-top {
+    margin-right: 50px;
+}
+
+#navbar-top {
+    transition: all 0.4s;
+    margin-right: 20px;
+}
+
+/*.head-bg .header-phone {*/
+    /*margin-top: 35px;*/
+/*}*/
+
+/*.header-phone {*/
+    /*transition: all 0.4s;*/
+/*}*/
+
+/*!*.header-phone-link-block {*!*/
+/*!*transition: all 0.4s;*!*/
+/*!*}*!*/
+
+/*.head-bg .header-phone-link-block {*/
+    /*display: inline-block;*/
+/*}*/
 
 .footer-link, .footer-link-info {
     font-weight: bold;
@@ -421,4 +467,17 @@ img.logo-footer {
 
 #about h2 {
     margin-bottom: 40px;
+}
+
+.logo {
+    background: url("../images/logo.png");
+    width: 208px;
+    height: 50px;
+    transition: all 0.4s;
+}
+
+.head-bg .logo {
+    background: url("../images/logo-small.png");
+    width: 49px;
+    margin-left: 80px;
 }
