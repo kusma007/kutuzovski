@@ -82,7 +82,7 @@ limion\bootstraplightbox\BootstrapMediaLightboxAsset::register($this);
                 <div class="col-xs-2 col-xs-offset-1 link-footer-block text-right">
                     <div><a href="tel:84012391008" class="footer-link-info">8 4012 391 008</a></div>
                     <div class="footer-link-descr">каждый день с 9.00 до 18.00</div>
-                <div><a href="mailto:79211031301@yandex.ru" class="footer-link-info">79211031301@yandex.ru</a></div>
+                    <div><a href="mailto:info@kutuzovskiy39.ru" class="footer-link-info">info@kutuzovskiy39.ru</a></div>
                     <div class="footer-link-descr">пишите в любое время</div>
                 </div>
                 <div class="col-xs-2 footer-social text-right">

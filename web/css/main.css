@@ -486,18 +486,18 @@ img.logo-footer {
 .gallery-img {
     background-size: 100%;
     background-position: center center;
-    transition: all 0.3s ease-in-out 0s;
 }
 
 .gallery-block a.lightbox:hover .gallery-img {
-    -moz-transform: scale(1.1,1.1);
-    -ms-transform: scale(1.1,1.1);
-    -o-transform: scale(1.1,1.1);
+    /*-moz-transform: scale(1.1,1.1);*/
+    /*-ms-transform: scale(1.1,1.1);*/
+    /*-o-transform: scale(1.1,1.1);*/
     /* -webkit-transform: scale(1.1,1.1); */
     /* transform: scale(1.1,1.1); */
-    filter: contrast(130%);
+    /*filter: contrast(130%);*/
     /* -webkit-filter: contrast(130%); */
-    background-size: 110%;
+    background-size: 110% auto;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .gallery-img-1 {
