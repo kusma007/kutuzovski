@@ -21,6 +21,9 @@ limion\bootstraplightbox\BootstrapMediaLightboxAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
     <meta name="viewport" content="width=1200">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Аренда помещений на окружной. г.Калининград, Кутузово">
+    <meta name="keywords" content="Калининград, Аренда офисов, Аренда помещений, Аренда офисов, Аренда Складов, Кутузово, МК Кутузовский, Кутузовский">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
